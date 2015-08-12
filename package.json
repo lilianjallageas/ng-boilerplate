@@ -1,0 +1,13 @@
+{
+  "name": "ng-boilerplate",
+  "version": "0.0.1",
+  "description": "Opinionated AngularJS Boilerplate",
+  "main": "app.js",
+  "author": "Lilian Jallageas <lilian.jallageas@free.fr>",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "angular-ui-router": "^0.2.15",
+    "angular-material": "^0.10.1",
+    "jquery": "^2.1.4"
+  }
+}
