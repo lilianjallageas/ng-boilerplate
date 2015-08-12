@@ -1,22 +1,31 @@
-/* global */
-
 'use strict';
-
 /**
+ * --------------------------------------------------------------
  * Provides the Global variables and Constants to the application
+ * --------------------------------------------------------------
+ * 
+ * Usage: 
+ * 1) Add the constant as a dependency to your service/controller/directive.
+ * 2) Access the properties of the constant, just like you would for an regular object.
+ * 
  */
-var config_module = angular.module('$appConfig', []);
 
-var config_data = {
-	'$appConfig'              : {
-		'CONST'                   : {
-			// APPLICATION CONSTANTS
-			'TOTO'                    : 'TOTO',
-		},
-	}
-};
+app.Constants
 
-// Loading the data to the module
-angular.forEach(config_data,function(key,value) {
-	config_module.constant(value,key);
-});
+// ====================
+// API URLS
+// ====================
+.constant('API', {
+        'url'                       : 'https://api.xyz.com',
+        'security': {
+            'url'                   : 'https://security.xyz.com',
+            'securityLogin'         : '/login'
+        }
+})
+
+// ====================
+// LABELS
+// ====================
+.constant('LABELS', {
+   'HOME'                  : 'Home Page'
+})

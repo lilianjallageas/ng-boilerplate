@@ -3,10 +3,17 @@
  * Controller 'HomeCtrl'
  * ---------------------------------
  */
+
+// Adding to the list of Controllers of the app
 app.Controllers.controller('HomeCtrl', HomeCtrl);
 
-HomeCtrl.$inject = ['$scope'];
+// Injecting the dependencies
+HomeCtrl.$inject = ['$scope', 'LABELS'];
 
-function HomeCtrl ($scope) {
-	//....nothing yet
+// Controller
+function HomeCtrl ($scope, LABELS) {
+
+	// Example of 'constants' usage. (See "constants.js")
+	$scope.homeLabel = LABELS.HOME;
+
 };
