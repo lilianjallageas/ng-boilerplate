@@ -8,6 +8,7 @@
     "angular": "^1.4.3",
     "angular-ui-router": "^0.2.15",
     "angular-material": "^0.10.1",
-    "jquery": "^2.1.4"
+    "jquery": "^2.1.4",
+    "restangular": "^1.5.1"
   }
 }

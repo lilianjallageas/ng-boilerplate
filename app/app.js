@@ -19,6 +19,7 @@ app.Dependencies = [
 	'app.directives',
 	'app.models',
 	'ui.router',
+	'restangular'
 ];
 var application = angular.module(appName, app.Dependencies);
 
@@ -26,6 +27,9 @@ var application = angular.module(appName, app.Dependencies);
 /**
  * Running the Application 
  */
-application.run(function ($rootScope, $location, $http) {
+application.run(function ($rootScope, $location, $http, Restangular, API) {
+
+	// Restangular : Setting the base URL of the API for the entire app
+	Restangular.setBaseUrl(API.url);
 
 });

@@ -14,9 +14,13 @@ In order to install the application on your computer, you need to:
 # Running the Application
 
 In order to test/run the application, you need to:
+
 - Install NodeJS [nodejs.org]
+
 - Go to the root of the project
+
 - Run: `node ./scripts/web-server.js`
+
 - Access the app with your favorite browser at: `http://localhost:8000/app/index.html`
 
 
@@ -33,6 +37,7 @@ In order to test/run the application, you need to:
 # TODO
 
 - Add "Testing" scripts and instructions.
+
 - Add details about the opinionated approach.
 
 ...Complete this file...
